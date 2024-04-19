@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Usuario from '../../models/Usuario'
 import { cadastrarUsuario } from '../../services/Service'
 import './Cadastro.css'
@@ -138,10 +138,16 @@ function Cadastro() {
             <button className='rounded text-white bg-red-400 hover:bg-red-700 w-1/2 py-2' onClick={back}>
               Cancelar
             </button>
-            <button className='rounded text-white bg-indigo-400 hover:bg-indigo-900 w-1/2 py-2' type='submit'>
+            <button className='rounded text-white bg-blue-400 hover:bg-blue-900 w-1/2 py-2' type='submit'>
               Cadastrar
             </button>
           </div>
+          <p>
+            Já tem uma conta?{' '}
+            <Link to="/login" className="text-blue-800 hover:underline">
+              Faça login
+            </Link>
+          </p>
         </form>
       </div>
     </>
