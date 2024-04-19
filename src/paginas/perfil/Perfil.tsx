@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../contexts/AuthContext'
-import loginLogo from '../../assets/react.svg'
+import loginLogo from '../../assets/background.jpg'
 function Perfil() {
   let navigate = useNavigate()
 
@@ -21,6 +21,7 @@ function Perfil() {
       <div className="relative mt-[-6rem] h-72 flex flex-col bg-sky-500 text-white text-2xl items-center justify-center">
         <p>Nome: {usuario.nome} </p>
         <p>Email: {usuario.usuario}</p>
+        <div></div>
       </div>
     </div>
   )

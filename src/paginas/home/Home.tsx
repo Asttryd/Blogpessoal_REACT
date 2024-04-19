@@ -1,5 +1,5 @@
 import React from 'react';
-import homeLogo from '../../assets/undraw_coffee_with_friends_3cbj.svg'
+import homeLogo from '../../assets/undraw_coffee_with_friends_3cbj.svg';
 import './Home.css';
 import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
